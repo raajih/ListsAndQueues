@@ -15,9 +15,25 @@ int ArrayList<ItemType>::getLength() const
 	return itemCount;
 }
 
-//TODO: Implement insert function
+//TODO: figure out exactly what to put into if statement to make sure position is valid
 template<class ItemType>
 bool ArrayList<ItemType>::insert(int newPosition, const ItemType& newEntry)
 {
-	return false;
+	if ((newPosition < 1) || (newPosition > itemCount + 1))//itemCount is minus 1 because we start the array at 1 instead of 0.
+		return false;
+
+	//Start at the end of the array and bump every element forward one.
+	for (int pos = itemCount; pos >= newPosition; pos--)
+		items[pos + 1] = items[pos];
+	items[newPosition] = newEntry;
+	itemCount++;
+	return true;
+		
+	
+}
+
+template<class ItemType>
+void ArrayList<ItemType>::clear()
+{
+	itemCount = 0;
 }

@@ -28,7 +28,7 @@ public:
 	items are renumbered accordingly, and the returned value is true.
 	@param position The list position of the entry to remove.
 	@return True if removal is successful, or false if not. */
-	virtual bool remove(int position) = 0;
+	//virtual bool remove(int position) = 0;
 	/** Removes all entries from this list.
 	@post List contains no entries and the count of items is 0. */
 	virtual void clear() = 0;
@@ -37,11 +37,11 @@ public:
 	@post The desired entry has been returned.
 	@param position The list position of the desired entry.
 	@return The entry at the given position. */
-	virtual ItemType getEntry(int position) const = 0;
+	//virtual ItemType getEntry(int position) const = 0;
 	/** Replaces the entry at the given position in this list.
 	@pre 1 <= position <= getLength().
 	@post The entry at the given position is newEntry.
 	@param position The list position of the entry to replace.
 	@param newEntry The replacement entry. */
-	virtual void setEntry(int position, const ItemType& newEntry) = 0;
+	//virtual void setEntry(int position, const ItemType& newEntry) = 0;
 }; // end ListInterface
