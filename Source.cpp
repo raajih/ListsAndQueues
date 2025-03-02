@@ -14,12 +14,15 @@ int main()
 	cout << l3.isEmpty() << endl;
 
 	l1.insert(1, 1);
-	l1.insert(2, 3);
+	l1.insert(1, 3);
 	l1.clear();
-	//l1.insert(1, 3);
-	//l1.insert(1, 4);
+	l1.insert(1, 3);
+	l1.insert(1, 4);
 
-	cout << l1.getLength() << endl;
+	
+	cout << l1.getEntry(2) << endl;
+	l1.setEntry(2, 100);
+	cout << l1.getEntry(2);
 	 
 	return 0;
 }

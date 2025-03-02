@@ -24,11 +24,11 @@ public:
 	void clear();
 	/** @throw PrecondViolatedExcep if position < 1 or
 	position > getLength(). */
-	//ItemType getEntry(int position) const throw(PrecondViolatedExcep);
+	ItemType getEntry(int position) const throw(PrecondViolatedExcep);
 	/** @throw PrecondViolatedExcep if position < 1 or
 	position > getLength(). */
-	//void setEntry(int position, const ItemType& newEntry)
-		//throw(PrecondViolatedExcep);
+	void setEntry(int position, const ItemType& newEntry)
+		throw(PrecondViolatedExcep);
 }; // end ArrayList
 
 #include "ArrayList.cpp"
