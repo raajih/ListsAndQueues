@@ -20,7 +20,7 @@ public:
 	bool isEmpty() const;
 	int getLength() const;
 	bool insert(int newPosition, const ItemType& newEntry);
-	//bool remove(int position);
+	bool remove(int position);
 	void clear();
 	/** @throw PrecondViolatedExcep if position < 1 or
 	position > getLength(). */

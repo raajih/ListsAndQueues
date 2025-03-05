@@ -32,6 +32,18 @@ bool ArrayList<ItemType>::insert(int newPosition, const ItemType& newEntry)
 }
 
 template<class ItemType>
+bool ArrayList<ItemType>::remove(int position)
+{
+	if (position < 1 || position > itemCount)//If position is not valid.
+		return false;
+
+	for (int i = position; i < itemCount; i++)
+		items[i] = items[i + 1];
+	itemCount--;
+	return true;
+}
+
+template<class ItemType>
 void ArrayList<ItemType>::clear()
 {
 	itemCount = 0;

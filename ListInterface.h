@@ -28,7 +28,7 @@ public:
 	items are renumbered accordingly, and the returned value is true.
 	@param position The list position of the entry to remove.
 	@return True if removal is successful, or false if not. */
-	//virtual bool remove(int position) = 0;
+	virtual bool remove(int position) = 0;
 	/** Removes all entries from this list.
 	@post List contains no entries and the count of items is 0. */
 	virtual void clear() = 0;
