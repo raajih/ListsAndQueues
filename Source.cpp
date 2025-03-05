@@ -1,3 +1,5 @@
+//Raajih Roland
+//Data Structures and Algorithms
 #include <iostream>
 #include <string>
 #include "ArrayList.h"
@@ -9,15 +11,31 @@ bool isPalindrome(string);
 
 int main()
 {
-	string testString = "";
-	cout << (isPalindrome(testString) ? "is a palindrome" : "is NOT a palindrome");
+	bool keepPlaying = true;
+	string testWord;
+
+	//Outputs game to user.
+	cout << "Welcome to Raajih's Palindrome tester!\n";
+	while (keepPlaying)
+	{
+		cout << "\nPlease enter the word you would like to test: ";
+		getline(cin, testWord);
+
+		cout << testWord << " " << (isPalindrome(testWord) ? "is a palindrome!" : "is NOT a palindrome!") << endl;
+
+		cout << "Would you like to play again? (Y or N): ";
+		string keepPlayingEntry;
+		getline(cin, keepPlayingEntry);
+		keepPlaying = (keepPlayingEntry == "Y" || keepPlayingEntry == "y") ? true : false;
+
+	}
 	
 
 	
 	
 	return 0;
 }
-//TODO: implement test conditions in case someone passes an empty string.
+
 bool isPalindrome(string aString)
 {
 	ArrayStack<string> stack;//Will hold the string in reverse order.

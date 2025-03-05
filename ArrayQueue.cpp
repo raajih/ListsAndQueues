@@ -12,7 +12,7 @@ bool ArrayQueue<ItemType>::isEmpty() const
 template<class ItemType>
 bool ArrayQueue<ItemType>::enqueue(const ItemType& newEntry)
 {
-	if (count == MAX_QUEUE)//TODO: off by one?
+	if (count == MAX_QUEUE)
 		return false;
 	
 	items[count] = newEntry;

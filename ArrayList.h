@@ -32,8 +32,7 @@ public:
 }; // end ArrayList
 
 #include "ArrayList.cpp"
-//TODO: Remove this before you turn it in! Also all of the commented out methods need finished.
-//Use this to have the ArrayList.cpp file to load every time a new data type is used. Had to go to ArrayList.cpp...
+//Use this to have the ArrayList.cpp file load every time a new data type is used. Had to go to ArrayList.cpp...
 //right click then select properties. Then on exclude from build select yes to get it to work.
 
 
