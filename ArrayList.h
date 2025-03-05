@@ -2,8 +2,6 @@
 /** ADT list: Array-based implementation.
 @file ArrayList.h */
 
-
-
 #include "ListInterface.h"
 #include "PrecondViolatedExcep.h"
 template< class ItemType>
