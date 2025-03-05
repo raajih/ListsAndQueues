@@ -26,7 +26,7 @@ bool ArrayQueue<ItemType>::dequeue()
 	if (count == 0)
 		return false;
 	
-	for (int i = 0; i < count; i++)
+	for (int i = 0; i < count - 1; i++) 
 		items[i] = items[i + 1];
 	count--;
 	return true;

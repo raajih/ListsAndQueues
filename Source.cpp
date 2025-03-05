@@ -2,22 +2,19 @@
 #include <string>
 #include "ArrayList.h"
 #include "ArrayQueue.h"
+#include "ArrayStack.h"
 using namespace std;
 
 int main()
 {
-	ArrayQueue<int> aq;
-	cout << (aq.isEmpty() ? "true" : "false") << endl;
+	ArrayStack<int> as;
 
-	aq.enqueue(1);
-	aq.enqueue(2);
-	aq.enqueue(3);
-	aq.dequeue();
-	cout << (aq.isEmpty() ? "true" : "false") << endl;
-	cout << aq.peekFront() << endl;
+	cout << (as.isEmpty() ? "empty" : "not empty") << endl;
 
-	
-	cout << (aq.isEmpty() ? "true" : "false") << endl;
+	as.push(1000);
+	as.push(5);
+	as.push(0);
+	cout << as.peek();
 	
 
 	
