@@ -7,8 +7,10 @@ class ArrayQueue : public QueueInterface<ItemType>
 {
 private:
 	static const int MAX_QUEUE = 50;
-	ItemType items[MAX_QUEUE];
+	ItemType items[MAX_QUEUE] = {};
 	int count;
+	int front;
+	int back;
 
 public:
 	ArrayQueue();

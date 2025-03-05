@@ -7,7 +7,7 @@ class ArrayStack : StackInterface<ItemType>
 {
 private:
 	static const int MAX_STACK = 50;
-	int items[MAX_STACK];
+	ItemType items[MAX_STACK] = {};
 	int count;
 
 public:

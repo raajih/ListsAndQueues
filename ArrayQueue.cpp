@@ -1,7 +1,7 @@
 #include "ArrayQueue.h"
 
 template<class ItemType>
-ArrayQueue<ItemType>::ArrayQueue() : count(0) {} //Shortcut to initalize count to 0 in constructor.
+ArrayQueue<ItemType>::ArrayQueue() : count(0), front(0), back(MAX_QUEUE - 1) {} //Shortcut to initalize count to 0 in constructor.
 
 template<class ItemType>
 bool ArrayQueue<ItemType>::isEmpty() const
