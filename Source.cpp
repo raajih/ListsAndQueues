@@ -51,7 +51,7 @@ bool isPalindrome(string aString)
 	{
 		string stackTop = stack.peek();
 		string queueFront = queue.peekFront();
-		if (stackTop == queueFront)
+		if (tolower(stackTop[0]) == tolower(queueFront[0])) //Only added the tolower to keep it case insensitive. Not necessary otherwise.
 		{
 			stack.pop();
 			queue.dequeue();
